@@ -9,8 +9,7 @@ type State = {}
 
 export class Hero extends Component<Props, State> {
   state = {}
-  what = ['RODRIGO SAKAE', 'DEVELOPER', 'LAWYER', 'DPO']
-
+  what = ['RODRIGO SAKAE', 'FULLSTACK', 'DEVELOPER', 'DPO']
 
   render() {
     return (
