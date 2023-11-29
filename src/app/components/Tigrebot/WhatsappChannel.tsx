@@ -26,7 +26,7 @@ const WhatsappChannel = () => {
         </div>
       </Link>
       <div className='flex flex-col p-2 border-b-[1px] border-neutral-200'>
-        <p>Siga o canal "TigreLOG" no WhatsApp:</p>
+        <p>Siga o canal &quot;TigreLOG&quot; no WhatsApp:</p>
         <div className='flex justify-between'>
           <Link
             href='https://whatsapp.com/channel/0029VaAJYF7EgGfQHgnDtu2e'
