@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { MongoClient, ObjectId, ServerApiVersion } from 'mongodb';
+import { MongoClient, ServerApiVersion } from 'mongodb';
 
-const uri = process.env.NEXT_PUBLIC_MONGO || "mongodb";
+const uri = process.env.MONGODB_URI || process.env.NEXT_PUBLIC_MONGO || "mongo";
 
 const client = new MongoClient(uri, {
   serverApi: {
