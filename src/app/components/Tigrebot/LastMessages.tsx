@@ -38,7 +38,7 @@ const LastMessages = () => {
         { loading
           ? (<Loading />)
           : (<>
-              { messages?.map((m: mongoMessages) => (<SingleMessage msg={ m } />)) }
+              { messages?.map((m: mongoMessages) => (<SingleMessage msg={ m } key={ m._id } />)) }
               <article className='ml-8 mb-2 flex gap-2 items-start justify-start'>
               <div className='min-w-10'>
                 <Image src={"/tigrebot.png"} alt='Tigrebot' width={70} height={70} className='rounded-full' />
