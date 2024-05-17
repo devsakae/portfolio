@@ -1,12 +1,12 @@
 import { Fragment } from "react"
-import WhatsappChannel from "../components/Tigrebot/WhatsappChannel"
 import "./page.css"
+import LastMessages from "../components/Tigrebot/LastMessages"
 
 const page = () => {
   return (
     <Fragment>
       <main className="flex place-content-center place-items-center h-screen">
-        <WhatsappChannel />
+        <LastMessages />
       </main>
     </Fragment>
   )
