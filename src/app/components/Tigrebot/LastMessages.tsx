@@ -32,6 +32,10 @@ const LastMessages = () => {
     getMessages();
   }, [])
 
+  // useEffect(() => {
+
+  // }, [messages])
+
   return (
     <div className='flex flex-col items-center w-full'>
       <main className='p-2 rounded-2xl mb-4'>
