@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from 'react'
+import React, { Ref, useEffect, useRef, useState } from 'react'
 import SingleMessage from './SingleMessage';
 import Loading from '../Loading';
 import Image from 'next/image';
@@ -16,6 +16,8 @@ const inviteLink = "https://chat.whatsapp.com/2yy89JmmjYf6mQLW87wjTQ";
 const LastMessages = () => {
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState<boolean>(true);
+
+  const myRef = useRef<HTMLDivElement>(null);
  
   const getMessages = async () => {
     setLoading(true);
@@ -30,6 +32,11 @@ const LastMessages = () => {
     getMessages();
   }, [])
 
+  useEffect(() => {
+    const thisRef = myRef.current;
+    thisRef?.scrollIntoView()
+  }, [messages])
+
   return (
     <div className='flex flex-col'>
       <main className='flex items-center w-full justify-center'>
@@ -41,7 +48,10 @@ const LastMessages = () => {
                 <div className='min-w-[45px] px-1'>
                   <Image src={"/tigrebot.png"} alt='Tigrebot' width={42} height={42} className='rounded-full' />
                 </div>
-                <div className="rounded-lg rounded-tl-none mb-4 px-2 text-sm w-full bg-white flex flex-col">
+                <div
+                  className="rounded-lg rounded-tl-none mb-4 px-2 text-sm w-full bg-white flex flex-col"
+                  ref={myRef}
+                >
                     <h2 className='text-blue-500 font-semibold mt-1 mb-2'>Tigrebot</h2>
                     <span>Gostou? No nosso grupo TigreLOG no WhatsApp, tem quiz, bolão, piadinha...<br /><br />Acesse já <a href={ inviteLink }>clicando aqui nesse convite especial</a>! 🐯</span>
                     <p className="text-gray-600 text-xs mt-1 mb-2 text-right leading-none">AGORA Ẽ A HORA</p>
