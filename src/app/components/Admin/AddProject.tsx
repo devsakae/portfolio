@@ -31,7 +31,7 @@ export default function AddProject({ handleWarning, stackList }: Props) {
   const [done, setDone] = useState(false);
   const [imageUrl, setImageUrl] = useState('');
   const [slug, setSlug] = useState('');
-  const [tags, setTags] = useState<Tag[]>([]);
+  const [tags, setTags] = useState<Tag[] | null | undefined | undefined[]>([]);
   const suggestions = stackList.map((tag) => {
     return {
       id: tag,
