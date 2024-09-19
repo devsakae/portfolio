@@ -16,6 +16,7 @@ type Props = {
 export type Tag = {
   id: string;
   text: string;
+  className?: string;
 };
 
 const KeyCodes = {
@@ -31,7 +32,7 @@ export default function AddProject({ handleWarning, stackList }: Props) {
   const [done, setDone] = useState(false);
   const [imageUrl, setImageUrl] = useState('');
   const [slug, setSlug] = useState('');
-  const [tags, setTags] = useState<Tag[] | null | undefined | undefined[]>([]);
+  const [tags, setTags] = useState<Tag[]>([]);
   const suggestions = stackList.map((tag) => {
     return {
       id: tag,
@@ -164,7 +165,7 @@ export default function AddProject({ handleWarning, stackList }: Props) {
 
               <div className='flex flex-col text-xs mb-4'>
                 Stacks:
-                <ReactTags
+                {/* <ReactTags
                   tags={tags}
                   suggestions={suggestions}
                   delimiters={delimiters}
@@ -174,7 +175,7 @@ export default function AddProject({ handleWarning, stackList }: Props) {
                   minQueryLength={1}
                   inputFieldPosition='top'
                   autocomplete
-                />
+                /> */}
               </div>
             </div>
 
