@@ -24,7 +24,7 @@ const mySocial = [
   {
     // Instagram
     component: <BsInstagram />,
-    url: 'http://www.instagram.com/rsakae',
+    url: 'http://www.instagram.com/devsakae',
   },
   {
     // WhatsApp
@@ -41,7 +41,7 @@ class Social extends Component<Props, State> {
   render() {
     return (
       <IconContext.Provider value={{ color: '#333', size: '2.5em' }}>
-        <div className='flex flex-row gap-x-4 mt-4 bg-white bg-opacity-40 md:bg-transparent w-fit py-1 px-2 text-slate-900'>
+        <div className='flex flex-row gap-x-8 mt-4 bg-white bg-opacity-40 md:bg-transparent w-fit py-1 px-2 text-slate-900'>
           { mySocial.map(({ url, component }) => this.social(url, component)) }
         </div>
       </IconContext.Provider>

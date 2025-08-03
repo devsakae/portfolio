@@ -11,12 +11,14 @@ class About extends Component<Props, State> {
   render() {
     return (
       <section className='min-h-[88vh] flex flex-col lg:flex-row justify-between items-center w-full bg-slate-100'>
-        <div className='mt-16 mb-8 mx-8 min-w-[400px]'>
+        <div className='mx-8 min-w-[350px]'>
           <div className='div-img'>
-            <div className='about-img'>
-              <Image src='/mewithasuit.png' alt='This is me' width={ 500 } height={ 500 } />
-            </div>
-          </div>
+          {/* 
+            <div className='about-img'> */}
+              <Image src='/devsakae.png' alt='This is me' width={ 500 } height={ 500 } />
+            {/* </div>
+           */}
+           </div>
         </div>
         <div className='mx-8'>
           <div className='flex flex-col gap-4 tracking-wide md:text-normal mb-4'>
