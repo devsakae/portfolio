@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@types/node": "20.2.0",
-    "@types/react-dom": "18.2.4",
+    "@types/react-dom": "^18.2.0",
     "aos": "^3.0.0-beta.6",
     "autoprefixer": "10.4.14",
     "eslint": "8.40.0",
@@ -26,12 +26,12 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@types/react": "^18.2.6",
+    "@types/react": "^18.2.0",
     "@types/react-tag-input": "^6.6.1",
     "eslint-config-next": "^15.5.4",
     "next": "^15.5.4",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "browser": {
     "child_process": false
