@@ -13,7 +13,6 @@
     "@types/react-dom": "^18.2.0",
     "aos": "^3.0.0-beta.6",
     "autoprefixer": "10.4.14",
-    "eslint": "8.40.0",
     "firebase": "^12.7.0",
     "mongodb": "^6.6.2",
     "postcss": "8.4.31",
