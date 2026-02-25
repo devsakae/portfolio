@@ -24,7 +24,7 @@ export default function Documents({}: Props) {
           </legend>
         </Link>
 
-        <a href='/curriculum.english.pdf' download className='flex flex-col items-center justify-between gap-4 hover:shadow-lg p-4'>
+        <a href='/curriculum.portugues.pdf' download className='flex flex-col items-center justify-between gap-4 hover:shadow-lg p-4'>
           <Image src='/journal-curriculumvitae.png' alt='My curriculum vitae' width='230' height='280' />
           <legend className='flex flex-col items-center justify-center'>
             <h2 className='font-semibold'>Download my curriculum vitae</h2>
