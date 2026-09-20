@@ -34,5 +34,10 @@
   },
   "browser": {
     "child_process": false
+  },
+  "allowScripts": {
+    "@firebase/util@1.13.0": true,
+    "protobufjs@7.5.8": true,
+    "sharp@0.34.5": true
   }
 }
